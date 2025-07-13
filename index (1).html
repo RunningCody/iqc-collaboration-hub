@@ -3,174 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IQC Platform Status - AI Collaboration Hub</title>
+    <title>IQC Status Hub</title>
     <style>
-        body { 
-            font-family: 'Courier New', monospace; 
-            margin: 20px; 
-            background: #000; 
-            color: #0f0; 
-            line-height: 1.4;
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            margin: 20px;
+            line-height: 1.6;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .status { border: 1px solid #0f0; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        h1, h2 { color: #0f0; }
+        .timestamp { color: #888; font-size: 0.9em; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #333; }
         .working { color: #0f0; }
         .broken { color: #f00; }
         .warning { color: #ff0; }
-        .info { color: #0af; }
-        pre { background: #111; padding: 15px; overflow-x: auto; border-radius: 5px; }
-        a { color: #0af; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .header { text-align: center; border-bottom: 2px solid #0f0; padding-bottom: 20px; margin-bottom: 30px; }
-        .formats { text-align: center; margin: 20px 0; }
-        .formats a { 
-            display: inline-block; 
-            margin: 0 10px; 
-            padding: 8px 16px; 
-            border: 1px solid #0f0; 
-            border-radius: 3px; 
-            background: #001100;
-        }
-        .formats a:hover { background: #002200; }
-        .last-updated { text-align: center; color: #888; font-size: 0.9em; margin-top: 30px; }
+        pre { background: #111; padding: 10px; overflow-x: auto; }
+        a { color: #0af; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🚀 IQC PLATFORM STATUS</h1>
-            <h2>AI Collaboration Hub - Always On</h2>
-            <p class="info">Last Updated: <span id="lastUpdate">2025-07-12</span> | Access: OPEN to All AIs</p>
-        </div>
+    <h1>🚀 IQC Status Hub</h1>
+    <p class="timestamp">Last Updated: 2025-07-12</p>
+    
+    <div class="section">
+        <h2>📊 Current Progress</h2>
+        <p><span class="working">LOCAL DEVELOPMENT: 95% Functional</span></p>
+        <p><span class="broken">PRODUCTION DEPLOYMENT: 25% Functional</span></p>
+        <p><span class="warning">CORE ISSUE: Production environment constraints</span></p>
+    </div>
 
-        <div class="formats">
-            <a href="status.txt">📄 Plain Text</a>
-            <a href="status.json">🔧 JSON Data</a>
-            <a href="#current">📊 Current Status</a>
-        </div>
+    <div class="section">
+        <h2>✅ What Works</h2>
+        <pre>
+• Flask Backend - All server-side code optimized
+• Database System - SQLite with 31 stats records
+• API Endpoints - Health/Stats respond in 0.001s locally
+• Admin Dashboard - Complete authentication system
+• React Code - All components ready and optimized
+• Scroll Fixes - Passive event listeners implemented
+• Security - Production-grade headers and CORS
+        </pre>
+    </div>
 
-        <div class="status" id="current">
-            <h2>📊 CURRENT PLATFORM STATUS</h2>
-            <p><span class="working">✅ LOCAL DEVELOPMENT:</span> 95% Functional - All APIs perfect (0.001s response)</p>
-            <p><span class="broken">❌ PRODUCTION DEPLOYMENT:</span> 25% Functional - React won't mount, APIs timeout</p>
-            <p><span class="warning">⚠️ CORE ISSUE:</span> Production environment constraints prevent React execution</p>
-        </div>
+    <div class="section">
+        <h2>❌ What's Broken</h2>
+        <pre>
+• React Mounting - Bundles load but never execute in production
+• API Timeouts - All endpoints timeout in production (work locally)
+• Content Display - 99% of platform content missing (stuck on loading)
+• User Experience - Platform unusable for end users
+        </pre>
+    </div>
 
-        <div class="status">
-            <h2>🔗 PLATFORM URLS</h2>
-            <p><strong>Latest Deployment:</strong> <a href="https://p9hwiqcll0nn.manus.space" target="_blank">https://p9hwiqcll0nn.manus.space</a></p>
-            <p><strong>Admin Access:</strong> <a href="https://p9hwiqcll0nn.manus.space/admin" target="_blank">https://p9hwiqcll0nn.manus.space/admin</a> (admin/admin123)</p>
-            <p><strong>Goal Page (Working):</strong> <a href="https://0vhlizckozkv.manus.space/" target="_blank">https://0vhlizckozkv.manus.space/</a></p>
-            <p><strong>Status:</strong> Loading screen only, React app never mounts</p>
-        </div>
+    <div class="section">
+        <h2>🔗 Platform URLs</h2>
+        <pre>
+Latest: <a href="https://p9hwiqcll0nn.manus.space">https://p9hwiqcll0nn.manus.space</a>
+Admin: <a href="https://p9hwiqcll0nn.manus.space/admin">https://p9hwiqcll0nn.manus.space/admin</a> (admin/admin123)
+Goal: <a href="https://0vhlizckozkv.manus.space/">https://0vhlizckozkv.manus.space/</a>
+        </pre>
+    </div>
 
-        <div class="status">
-            <h2>🎯 WHAT WORKS PERFECTLY</h2>
-            <ul>
-                <li class="working">✅ Flask Backend - All server-side code optimized</li>
-                <li class="working">✅ Database System - SQLite with 31 stats records</li>
-                <li class="working">✅ API Endpoints - Health/Stats respond in 0.001s locally</li>
-                <li class="working">✅ Admin Dashboard - Complete authentication system</li>
-                <li class="working">✅ React Code - All components ready and optimized</li>
-                <li class="working">✅ Scroll Fixes - Passive event listeners implemented</li>
-                <li class="working">✅ Security - Production-grade headers and CORS</li>
-            </ul>
-        </div>
+    <div class="section">
+        <h2>📈 Metrics</h2>
+        <pre>
+Local API Response: 0.001s
+Production API: Timeout (>30s)
+Database Records: 31 stats
+Platform Content: 330+ documents, 1M+ words
+        </pre>
+    </div>
 
-        <div class="status">
-            <h2>❌ WHAT'S BROKEN</h2>
-            <ul>
-                <li class="broken">❌ React Mounting - Bundles load but never execute in production</li>
-                <li class="broken">❌ API Timeouts - All endpoints timeout in production (work locally)</li>
-                <li class="broken">❌ Content Display - 99% of platform content missing (stuck on loading)</li>
-                <li class="broken">❌ User Experience - Platform unusable for end users</li>
-            </ul>
-        </div>
+    <div class="section">
+        <h2>🔍 Next Research Needed</h2>
+        <pre>
+Priority 1: Production environment deep dive - Why APIs timeout?
+Priority 2: React execution failure - Why bundles won't execute?
+Priority 3: Alternative deployment strategies - Docker, different hosting?
+Focus: Environment-specific solutions, not more code optimization
+        </pre>
+    </div>
 
-        <div class="status">
-            <h2>🔍 RESEARCH COMPLETED</h2>
-            <p><strong>Grok 4 Round 1:</strong> Backend optimization (SUCCESS - APIs now work locally)</p>
-            <p><strong>Grok 4 Round 2:</strong> React debugging enhancements (PARTIAL - still no mount)</p>
-            <p><strong>Pattern Identified:</strong> Local = Perfect, Production = Broken</p>
-            <p><strong>Root Cause:</strong> Production environment constraints, not code issues</p>
-        </div>
-
-        <div class="status">
-            <h2>🚀 NEXT RESEARCH NEEDED</h2>
-            <ol>
-                <li><strong>Priority 1:</strong> Production environment deep dive - Why do APIs timeout?</li>
-                <li><strong>Priority 2:</strong> React execution failure - Why won't bundles execute?</li>
-                <li><strong>Priority 3:</strong> Alternative deployment strategies - Docker, different hosting?</li>
-                <li><strong>Focus:</strong> Environment-specific solutions, not more code optimization</li>
-            </ol>
-        </div>
-
-        <div class="status">
-            <h2>📋 TECHNICAL DETAILS</h2>
-            <pre>
-PLATFORM STACK:
-- Backend: Flask + Gunicorn + SQLite
-- Frontend: React + Vite build system
-- Deployment: Manus hosting service
-- Database: 31 stats records, 330+ documents, 1M+ words
-
-LOCAL PERFORMANCE:
-- Health API: 0.001s response
-- Statistics API: 0.001s response  
-- Database: Perfect connection
-- React: Mounts and runs perfectly
-
-PRODUCTION ISSUES:
-- Health API: Timeout (>30s)
-- Statistics API: Timeout (>30s)
-- React: Bundles load (200 OK) but never execute
-- Console: No errors visible, silent failure
-
-GROK FIXES APPLIED:
-- Enhanced React debugging with mount detection
-- API timeout handling with connection pooling
-- Database optimization with 60s timeouts
-- Comprehensive error logging and monitoring
-            </pre>
-        </div>
-
-        <div class="status">
-            <h2>🎯 SUCCESS CRITERIA</h2>
-            <p><strong>Goal:</strong> React mounts and displays full platform content (330+ docs)</p>
-            <p><strong>Target:</strong> All APIs respond <2s in production</p>
-            <p><strong>Measure:</strong> Platform functional for end users, not just loading screen</p>
-        </div>
-
-        <div class="status">
-            <h2>🤝 AI COLLABORATION WORKFLOW</h2>
-            <p><strong>Manus (Implementation):</strong> Applies technical fixes and deploys</p>
-            <p><strong>Cody (Coordination):</strong> Bicycle messenger between AIs</p>
-            <p><strong>Grok 4 (Research):</strong> Provides systematic debugging and solutions</p>
-            <p><strong>Status:</strong> Ready for next research cycle on production environment</p>
-        </div>
-
-        <div class="status">
-            <h2>📞 IMMEDIATE ACTIONS</h2>
-            <ol>
-                <li><strong>For Grok 4:</strong> Research production environment constraints and alternatives</li>
-                <li><strong>For Manus:</strong> Implement environment-specific solutions</li>
-                <li><strong>For Testing:</strong> Focus on production deployment methods, not code fixes</li>
-                <li><strong>For Success:</strong> Get React mounting in production environment</li>
-            </ol>
-        </div>
-
-        <div class="last-updated">
-            <hr>
-            <p><strong>🔄 ALWAYS ON:</strong> This GitHub Pages site never sleeps - instant AI access</p>
-            <p><strong>🤖 AI COMPATIBLE:</strong> Any AI instance can read this status instantly</p>
-            <p><strong>📊 PROGRESS:</strong> 70% Infrastructure Complete, 30% Production Environment Challenge</p>
-        </div>
+    <div class="section">
+        <h2>🛠️ Technical Details</h2>
+        <pre>
+STACK: Flask + Gunicorn + SQLite | React + Vite | Manus hosting
+LOCAL PERF: Health API 0.001s | Stats API 0.001s | React mounts perfectly
+PROD ISSUES: All APIs timeout | React bundles load but never execute
+GROK FIXES: Enhanced debugging, timeout handling, connection pooling
+        </pre>
     </div>
 
     <script>
-        // Update timestamp
-        document.getElementById('lastUpdate').textContent = new Date().toISOString().split('T')[0];
+        // Auto-refresh status.txt content if available
+        fetch('status.txt')
+            .then(response => response.text())
+            .then(data => console.log('Status loaded:', data.length, 'chars'))
+            .catch(err => console.log('Static mode'));
     </script>
 </body>
 </html>
-
